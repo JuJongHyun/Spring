@@ -27,7 +27,7 @@ public class HelloController {
     //API
     @GetMapping("hello-String")
     @ResponseBody
-    //http -> body
+    //@ResponseBody : http -> body
     public String helloString(@RequestParam("name") String name) {
         return "hello " + name;
     }
@@ -40,6 +40,7 @@ public class HelloController {
         return hello;
     }
 
+    //포로퍼티 방식
     static class Hello {
         private String name;
 
