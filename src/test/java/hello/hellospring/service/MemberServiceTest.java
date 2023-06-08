@@ -13,6 +13,8 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
+//  회원 서비스 테스트
+
 class MemberServiceTest {
 
     MemberService memberService;
