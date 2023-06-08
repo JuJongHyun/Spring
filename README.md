@@ -1,4 +1,4 @@
-# Spring Study_1
+# Spring Study_1 간단한 회원가입
 
 
 Software Development Environment
