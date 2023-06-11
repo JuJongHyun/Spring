@@ -1,6 +1,13 @@
 package hello.hellospring.domain;
 
 //회원 객체
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Member {
 
     //시스템 저장하는 ID -> 구분
@@ -8,6 +15,7 @@ public class Member {
     //그 이유는 기본형인 long을 사용하면 객체를 생성하는 시점에 id값에 0이라는 기본값이 들어가는 반면,
     //Long을 사용하면 기본값이 null이기 때문에 값이 없다는 것을 잘 표현할 수 있기 때문에
 
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 
