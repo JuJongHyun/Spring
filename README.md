@@ -3,7 +3,7 @@
 
 Software Development Environment
 
-OS : Apple Mac
+OS : Apple Mac Book
 
 Framework : Spring
 
